@@ -17,7 +17,6 @@
 		67086AB81D4E88FA00F56A6A /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67086AB71D4E88FA00F56A6A /* LeaderboardViewController.swift */; };
 		67086AB91D4E88FA00F56A6A /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67086AB71D4E88FA00F56A6A /* LeaderboardViewController.swift */; };
 		67086ABA1D4E88FA00F56A6A /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67086AB71D4E88FA00F56A6A /* LeaderboardViewController.swift */; };
-		67086AC21D4EA1D800F56A6A /* secret_village.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 67086AC11D4EA1D800F56A6A /* secret_village.mp3 */; };
 		67086AC41D4EA21E00F56A6A /* title_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 67086AC31D4EA21E00F56A6A /* title_music.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +52,6 @@
 		67086AA51D4D82D700F56A6A /* SurvivalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvivalUITests.swift; sourceTree = "<group>"; };
 		67086AA71D4D82D700F56A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67086AB71D4E88FA00F56A6A /* LeaderboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
-		67086AC11D4EA1D800F56A6A /* secret_village.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = secret_village.mp3; path = ../../../Documents/secret_village.mp3; sourceTree = "<group>"; };
 		67086AC31D4EA21E00F56A6A /* title_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = title_music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,12 +105,11 @@
 			children = (
 				67086A851D4D82D700F56A6A /* AppDelegate.swift */,
 				67086A871D4D82D700F56A6A /* ViewController.swift */,
-				67086AC31D4EA21E00F56A6A /* title_music.mp3 */,
 				67086A891D4D82D700F56A6A /* Main.storyboard */,
+				67086AC31D4EA21E00F56A6A /* title_music.mp3 */,
 				67086A8C1D4D82D700F56A6A /* Assets.xcassets */,
 				67086A8E1D4D82D700F56A6A /* LaunchScreen.storyboard */,
 				67086A911D4D82D700F56A6A /* Info.plist */,
-				67086AC11D4EA1D800F56A6A /* secret_village.mp3 */,
 				67086AB71D4E88FA00F56A6A /* LeaderboardViewController.swift */,
 			);
 			path = Survival;
@@ -244,7 +241,6 @@
 				67086A901D4D82D700F56A6A /* LaunchScreen.storyboard in Resources */,
 				67086A8D1D4D82D700F56A6A /* Assets.xcassets in Resources */,
 				67086AC41D4EA21E00F56A6A /* title_music.mp3 in Resources */,
-				67086AC21D4EA1D800F56A6A /* secret_village.mp3 in Resources */,
 				67086A8B1D4D82D700F56A6A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +505,7 @@
 				67086AAC1D4D82D700F56A6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67086AAD1D4D82D700F56A6A /* Build configuration list for PBXNativeTarget "SurvivalTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +514,7 @@
 				67086AAF1D4D82D700F56A6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67086AB01D4D82D700F56A6A /* Build configuration list for PBXNativeTarget "SurvivalUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +523,7 @@
 				67086AB21D4D82D700F56A6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
