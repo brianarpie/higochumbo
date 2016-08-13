@@ -14,6 +14,11 @@
 		67086A901D4D82D700F56A6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67086A8E1D4D82D700F56A6A /* LaunchScreen.storyboard */; };
 		67086A9B1D4D82D700F56A6A /* SurvivalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67086A9A1D4D82D700F56A6A /* SurvivalTests.swift */; };
 		67086AA61D4D82D700F56A6A /* SurvivalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67086AA51D4D82D700F56A6A /* SurvivalUITests.swift */; };
+		67086AB81D4E88FA00F56A6A /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67086AB71D4E88FA00F56A6A /* LeaderboardViewController.swift */; };
+		67086AB91D4E88FA00F56A6A /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67086AB71D4E88FA00F56A6A /* LeaderboardViewController.swift */; };
+		67086ABA1D4E88FA00F56A6A /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67086AB71D4E88FA00F56A6A /* LeaderboardViewController.swift */; };
+		67086AC21D4EA1D800F56A6A /* secret_village.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 67086AC11D4EA1D800F56A6A /* secret_village.mp3 */; };
+		67086AC41D4EA21E00F56A6A /* title_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 67086AC31D4EA21E00F56A6A /* title_music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,9 @@
 		67086AA11D4D82D700F56A6A /* SurvivalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurvivalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67086AA51D4D82D700F56A6A /* SurvivalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvivalUITests.swift; sourceTree = "<group>"; };
 		67086AA71D4D82D700F56A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67086AB71D4E88FA00F56A6A /* LeaderboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		67086AC11D4EA1D800F56A6A /* secret_village.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = secret_village.mp3; path = ../../../Documents/secret_village.mp3; sourceTree = "<group>"; };
+		67086AC31D4EA21E00F56A6A /* title_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = title_music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +107,13 @@
 			children = (
 				67086A851D4D82D700F56A6A /* AppDelegate.swift */,
 				67086A871D4D82D700F56A6A /* ViewController.swift */,
+				67086AC31D4EA21E00F56A6A /* title_music.mp3 */,
 				67086A891D4D82D700F56A6A /* Main.storyboard */,
 				67086A8C1D4D82D700F56A6A /* Assets.xcassets */,
 				67086A8E1D4D82D700F56A6A /* LaunchScreen.storyboard */,
 				67086A911D4D82D700F56A6A /* Info.plist */,
+				67086AC11D4EA1D800F56A6A /* secret_village.mp3 */,
+				67086AB71D4E88FA00F56A6A /* LeaderboardViewController.swift */,
 			);
 			path = Survival;
 			sourceTree = "<group>";
@@ -193,6 +204,7 @@
 				TargetAttributes = {
 					67086A811D4D82D600F56A6A = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = G7X45U7936;
 					};
 					67086A951D4D82D700F56A6A = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -231,6 +243,8 @@
 			files = (
 				67086A901D4D82D700F56A6A /* LaunchScreen.storyboard in Resources */,
 				67086A8D1D4D82D700F56A6A /* Assets.xcassets in Resources */,
+				67086AC41D4EA21E00F56A6A /* title_music.mp3 in Resources */,
+				67086AC21D4EA1D800F56A6A /* secret_village.mp3 in Resources */,
 				67086A8B1D4D82D700F56A6A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67086A881D4D82D700F56A6A /* ViewController.swift in Sources */,
+				67086AB81D4E88FA00F56A6A /* LeaderboardViewController.swift in Sources */,
 				67086A861D4D82D700F56A6A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67086AB91D4E88FA00F56A6A /* LeaderboardViewController.swift in Sources */,
 				67086A9B1D4D82D700F56A6A /* SurvivalTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67086ABA1D4E88FA00F56A6A /* LeaderboardViewController.swift in Sources */,
 				67086AA61D4D82D700F56A6A /* SurvivalUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,10 +418,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Survival/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = parsedcache.Survival;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -412,10 +433,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Survival/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = parsedcache.Survival;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
