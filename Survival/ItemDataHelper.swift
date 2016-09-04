@@ -19,6 +19,7 @@ class ItemDataHelper {
     static let _price = Expression<Int64>("price")
     static let _image_url = Expression<String?>("image_url")
     
+    typealias T = Item
     static let items = Table("items")
     
     static func createTable() throws {
@@ -29,20 +30,20 @@ class ItemDataHelper {
         do {
             let expr = items.create { t in
                 t.column(_item_id, primaryKey: true)
-                t.column(_name)
+                t.column(_name, unique: true)
                 t.column(_display_name)
                 t.column(_description)
                 t.column(_level_required)
                 t.column(_price)
-                t.column(_image_url, defaultValue: "hello world")
+                t.column(_image_url)
                 t.column(_hero_id)
-                t.foreignKey(_hero_id, references: HeroDataHelper.table, HeroDataHelper.heroId, update: .Cascade, delete: .Cascade)
+                t.foreignKey(_hero_id, references: HeroDataHelper.table, HeroDataHelper._hero_id, update: .Cascade, delete: .Cascade)
             }
             print(expr.asSQL())
             _ = try DB.run(expr)
         } catch _ {
             // Error thrown when table exists
-            print("ERROR: unable to create items table")
+            throw DataAccessError.Table_Create_Error
         }
     }
     static func insert(name:String, display_name:String, description:String, level_required:Int64, price:Int64, image_url:String? = nil) throws -> Int64 {
@@ -67,6 +68,19 @@ class ItemDataHelper {
             throw DataAccessError.Insert_Error
         }
     }
+    static func deleteAll() throws -> Void {
+        guard let DB = SQLiteDataStore.sharedInstance.BBDB else {
+            throw DataAccessError.Datastore_Connection_Error
+        }
+        let rows = try DB.prepare(items)
+        for item in rows {
+            let query = items.filter(_item_id == item[_item_id])
+            let tmp = try DB.run(query.delete())
+            guard tmp == 1 else {
+                throw DataAccessError.Delete_Error
+            }
+        }
+    }
     static func update_hero_id(item_id: Int64, hero_id: Int64) throws -> Void {
         guard let DB = SQLiteDataStore.sharedInstance.BBDB else {
             throw DataAccessError.Datastore_Connection_Error
@@ -87,6 +101,51 @@ class ItemDataHelper {
                 retArray.append("\(item[_name]),\(item[_display_name]),\(item[_hero_id])")
             }
         }
+        return retArray
+    }
+    static func getPurchasedItems() throws -> [T] {
+        guard let db = SQLiteDataStore.sharedInstance.BBDB else {
+            throw DataAccessError.Datastore_Connection_Error
+        }
+        var retArray = [T]()
+        try db.transaction {
+            let query = items.filter(_hero_id != nil)
+            for item in try db.prepare(query) {
+                retArray.append(Item(
+                    name: item[_name],
+                    displayName: item[_display_name],
+                    description: item[_description],
+                    price: item[_price],
+                    levelRequired: item[_level_required],
+                    heroId: item[_hero_id],
+                    imageUrl: item[_image_url]
+                ))
+            }
+        }
+        
+        return retArray
+    }
+    
+    static func getItemsForSale() throws -> [T] {
+        guard let db = SQLiteDataStore.sharedInstance.BBDB else {
+            throw DataAccessError.Datastore_Connection_Error
+        }
+        var retArray = [T]()
+        try db.transaction {
+            let query = items.filter(_hero_id == nil)
+            for item in try db.prepare(query) {
+                retArray.append(Item(
+                    name: item[_name],
+                    displayName: item[_display_name],
+                    description: item[_description],
+                    price: item[_price],
+                    levelRequired: item[_level_required],
+                    heroId: item[_hero_id],
+                    imageUrl: item[_image_url]
+                ))
+            }
+        }
+        
         return retArray
     }
 }

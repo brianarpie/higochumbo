@@ -11,6 +11,7 @@ import SQLite
 
 enum DataAccessError: ErrorType {
     case Datastore_Connection_Error
+    case Table_Create_Error
     case Insert_Error
     case Delete_Error
     case Search_Error
@@ -23,18 +24,11 @@ class SQLiteDataStore {
     
     private init() {
         
-//        var path = "SurvivalDB.sqlite"
         let path = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first!
+        print (path)
         
-//        let
-//        if let dirs: [NSString] = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.AllDomainsMask, true) as [NSString] {
-//            let dir = dirs[0]
-//            path = dir.stringByAppendingPathComponent("SurvivalDB.sqlite");
-//        }
-//        
         do {
-//            BBDB = try Connection("\(path)/db.sqlite3")
-            BBDB = try Connection()
+            BBDB = try Connection("\(path)/db.sqlite3")
         } catch _ {
             BBDB = nil
         }
@@ -43,8 +37,6 @@ class SQLiteDataStore {
     
     func createTables() throws{
         do {
-//            try TeamDataHelper.createTable()
-//            try PlayerDataHelper.createTable()
             try HeroDataHelper.createTable()
             try ItemDataHelper.createTable()
         } catch {
