@@ -30,8 +30,30 @@ class ViewController: UIViewController {
 
         }
     }
-    
+    func SeedDatabase() {
+        let db = SQLiteDataStore.sharedInstance
+        
+        do {
+            try db.createTables()
+            
+        } catch _ {}
+        
+        do {
+            print("seeding")
+            
+            let hero_id = try HeroDataHelper.createHero()
 
+            let item_id = try ItemDataHelper.insert("frozen_staff",
+                display_name:"Frozen Staff",
+                description:"An icy shaft... Oops, I mean't staff.",
+                level_required: 1,
+                price: 300
+            )
+            
+            try ItemDataHelper.update_hero_id(item_id, hero_id: hero_id)
+
+        } catch _ {}
+    }
     
     @IBOutlet var gameSummaryLabel: UILabel!
     
@@ -57,6 +79,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         BackgroundMusic()
+        SeedDatabase()
         
     }
 

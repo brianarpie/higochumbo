@@ -18,6 +18,19 @@
 		67086AB91D4E88FA00F56A6A /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67086AB71D4E88FA00F56A6A /* LeaderboardViewController.swift */; };
 		67086ABA1D4E88FA00F56A6A /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67086AB71D4E88FA00F56A6A /* LeaderboardViewController.swift */; };
 		67086AC41D4EA21E00F56A6A /* title_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 67086AC31D4EA21E00F56A6A /* title_music.mp3 */; };
+		670CDA411D7BA48E00DC47D0 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670CDA401D7BA48E00DC47D0 /* EventModel.swift */; };
+		670CDA431D7BA50300DC47D0 /* EnemyActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670CDA421D7BA50300DC47D0 /* EnemyActionModel.swift */; };
+		670CDA451D7BA56900DC47D0 /* EnemyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670CDA441D7BA56900DC47D0 /* EnemyModel.swift */; };
+		670CDA471D7BA5BE00DC47D0 /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670CDA461D7BA5BE00DC47D0 /* HeroModel.swift */; };
+		670CDA491D7BA5FC00DC47D0 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670CDA481D7BA5FC00DC47D0 /* ItemModel.swift */; };
+		670CDA4B1D7BB87800DC47D0 /* HeroDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670CDA4A1D7BB87800DC47D0 /* HeroDataHelper.swift */; };
+		670CDA4D1D7BB93200DC47D0 /* ItemDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670CDA4C1D7BB93200DC47D0 /* ItemDataHelper.swift */; };
+		672654FC1D721DFB0074C36F /* PlayerDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672654FB1D721DFB0074C36F /* PlayerDataHelper.swift */; };
+		672655051D721E940074C36F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672655041D721E940074C36F /* DataModel.swift */; };
+		672655071D721F380074C36F /* DataHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672655061D721F380074C36F /* DataHelperProtocol.swift */; };
+		67CCF9541D6BE1D6003B15D5 /* SQLiteDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CCF9531D6BE1D6003B15D5 /* SQLiteDataStore.swift */; };
+		67CCF9A01D6BE2C7003B15D5 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67CCF98E1D6BE24C003B15D5 /* SQLite.framework */; };
+		67CCF9A21D6BF418003B15D5 /* TeamDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CCF9A11D6BF418003B15D5 /* TeamDataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +47,55 @@
 			proxyType = 1;
 			remoteGlobalIDString = 67086A811D4D82D600F56A6A;
 			remoteInfo = Survival;
+		};
+		67CCF98D1D6BE24C003B15D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67CCF9551D6BE20C003B15D5 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		67CCF98F1D6BE24C003B15D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67CCF9551D6BE20C003B15D5 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		67CCF9911D6BE24C003B15D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67CCF9551D6BE20C003B15D5 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		67CCF9931D6BE24C003B15D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67CCF9551D6BE20C003B15D5 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		67CCF9951D6BE24C003B15D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67CCF9551D6BE20C003B15D5 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		67CCF9971D6BE24C003B15D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67CCF9551D6BE20C003B15D5 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		67CCF9991D6BE24C003B15D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67CCF9551D6BE20C003B15D5 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -53,6 +115,19 @@
 		67086AA71D4D82D700F56A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67086AB71D4E88FA00F56A6A /* LeaderboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		67086AC31D4EA21E00F56A6A /* title_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = title_music.mp3; sourceTree = "<group>"; };
+		670CDA401D7BA48E00DC47D0 /* EventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		670CDA421D7BA50300DC47D0 /* EnemyActionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyActionModel.swift; sourceTree = "<group>"; };
+		670CDA441D7BA56900DC47D0 /* EnemyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyModel.swift; sourceTree = "<group>"; };
+		670CDA461D7BA5BE00DC47D0 /* HeroModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
+		670CDA481D7BA5FC00DC47D0 /* ItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		670CDA4A1D7BB87800DC47D0 /* HeroDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDataHelper.swift; sourceTree = "<group>"; };
+		670CDA4C1D7BB93200DC47D0 /* ItemDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDataHelper.swift; sourceTree = "<group>"; };
+		672654FB1D721DFB0074C36F /* PlayerDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDataHelper.swift; sourceTree = "<group>"; };
+		672655041D721E940074C36F /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		672655061D721F380074C36F /* DataHelperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHelperProtocol.swift; sourceTree = "<group>"; };
+		67CCF9531D6BE1D6003B15D5 /* SQLiteDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SQLiteDataStore.swift; path = ../SQLiteDataStore.swift; sourceTree = "<group>"; };
+		67CCF9551D6BE20C003B15D5 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../Downloads/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		67CCF9A11D6BF418003B15D5 /* TeamDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDataHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67CCF9A01D6BE2C7003B15D5 /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +163,7 @@
 				67086A991D4D82D700F56A6A /* SurvivalTests */,
 				67086AA41D4D82D700F56A6A /* SurvivalUITests */,
 				67086A831D4D82D700F56A6A /* Products */,
+				67CCF9551D6BE20C003B15D5 /* SQLite.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +180,11 @@
 		67086A841D4D82D700F56A6A /* Survival */ = {
 			isa = PBXGroup;
 			children = (
+				670CDA3F1D7BA47100DC47D0 /* DatabaseModels */,
+				670CDA371D7BA46100DC47D0 /* DatabaseHelpers */,
+				67CCF9531D6BE1D6003B15D5 /* SQLiteDataStore.swift */,
+				672654FB1D721DFB0074C36F /* PlayerDataHelper.swift */,
+				67CCF9A11D6BF418003B15D5 /* TeamDataHelper.swift */,
 				67086A851D4D82D700F56A6A /* AppDelegate.swift */,
 				67086A871D4D82D700F56A6A /* ViewController.swift */,
 				67086A891D4D82D700F56A6A /* Main.storyboard */,
@@ -111,6 +193,8 @@
 				67086A8E1D4D82D700F56A6A /* LaunchScreen.storyboard */,
 				67086A911D4D82D700F56A6A /* Info.plist */,
 				67086AB71D4E88FA00F56A6A /* LeaderboardViewController.swift */,
+				672655041D721E940074C36F /* DataModel.swift */,
+				672655061D721F380074C36F /* DataHelperProtocol.swift */,
 			);
 			path = Survival;
 			sourceTree = "<group>";
@@ -131,6 +215,41 @@
 				67086AA71D4D82D700F56A6A /* Info.plist */,
 			);
 			path = SurvivalUITests;
+			sourceTree = "<group>";
+		};
+		670CDA371D7BA46100DC47D0 /* DatabaseHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				670CDA4A1D7BB87800DC47D0 /* HeroDataHelper.swift */,
+				670CDA4C1D7BB93200DC47D0 /* ItemDataHelper.swift */,
+			);
+			name = DatabaseHelpers;
+			sourceTree = "<group>";
+		};
+		670CDA3F1D7BA47100DC47D0 /* DatabaseModels */ = {
+			isa = PBXGroup;
+			children = (
+				670CDA401D7BA48E00DC47D0 /* EventModel.swift */,
+				670CDA421D7BA50300DC47D0 /* EnemyActionModel.swift */,
+				670CDA441D7BA56900DC47D0 /* EnemyModel.swift */,
+				670CDA461D7BA5BE00DC47D0 /* HeroModel.swift */,
+				670CDA481D7BA5FC00DC47D0 /* ItemModel.swift */,
+			);
+			name = DatabaseModels;
+			sourceTree = "<group>";
+		};
+		67CCF9841D6BE24C003B15D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67CCF98E1D6BE24C003B15D5 /* SQLite.framework */,
+				67CCF9901D6BE24C003B15D5 /* SQLiteTests iOS.xctest */,
+				67CCF9921D6BE24C003B15D5 /* SQLite.framework */,
+				67CCF9941D6BE24C003B15D5 /* SQLiteTests Mac.xctest */,
+				67CCF9961D6BE24C003B15D5 /* SQLite.framework */,
+				67CCF9981D6BE24C003B15D5 /* SQLiteTests tvOS.xctest */,
+				67CCF99A1D6BE24C003B15D5 /* SQLite.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +343,12 @@
 			mainGroup = 67086A791D4D82D600F56A6A;
 			productRefGroup = 67086A831D4D82D700F56A6A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 67CCF9841D6BE24C003B15D5 /* Products */;
+					ProjectRef = 67CCF9551D6BE20C003B15D5 /* SQLite.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				67086A811D4D82D600F56A6A /* Survival */,
@@ -232,6 +357,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		67CCF98E1D6BE24C003B15D5 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 67CCF98D1D6BE24C003B15D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		67CCF9901D6BE24C003B15D5 /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = 67CCF98F1D6BE24C003B15D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		67CCF9921D6BE24C003B15D5 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 67CCF9911D6BE24C003B15D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		67CCF9941D6BE24C003B15D5 /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = 67CCF9931D6BE24C003B15D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		67CCF9961D6BE24C003B15D5 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 67CCF9951D6BE24C003B15D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		67CCF9981D6BE24C003B15D5 /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = 67CCF9971D6BE24C003B15D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		67CCF99A1D6BE24C003B15D5 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 67CCF9991D6BE24C003B15D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		67086A801D4D82D600F56A6A /* Resources */ = {
@@ -266,9 +443,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				670CDA431D7BA50300DC47D0 /* EnemyActionModel.swift in Sources */,
+				670CDA4B1D7BB87800DC47D0 /* HeroDataHelper.swift in Sources */,
+				670CDA451D7BA56900DC47D0 /* EnemyModel.swift in Sources */,
+				670CDA491D7BA5FC00DC47D0 /* ItemModel.swift in Sources */,
+				672655051D721E940074C36F /* DataModel.swift in Sources */,
+				672654FC1D721DFB0074C36F /* PlayerDataHelper.swift in Sources */,
+				67CCF9A21D6BF418003B15D5 /* TeamDataHelper.swift in Sources */,
+				670CDA471D7BA5BE00DC47D0 /* HeroModel.swift in Sources */,
 				67086A881D4D82D700F56A6A /* ViewController.swift in Sources */,
+				670CDA411D7BA48E00DC47D0 /* EventModel.swift in Sources */,
+				67CCF9541D6BE1D6003B15D5 /* SQLiteDataStore.swift in Sources */,
 				67086AB81D4E88FA00F56A6A /* LeaderboardViewController.swift in Sources */,
+				670CDA4D1D7BB93200DC47D0 /* ItemDataHelper.swift in Sources */,
 				67086A861D4D82D700F56A6A /* AppDelegate.swift in Sources */,
+				672655071D721F380074C36F /* DataHelperProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
