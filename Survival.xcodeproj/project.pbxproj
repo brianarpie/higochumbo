@@ -31,6 +31,7 @@
 		672655071D721F380074C36F /* DataHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672655061D721F380074C36F /* DataHelperProtocol.swift */; };
 		67CCF9541D6BE1D6003B15D5 /* SQLiteDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CCF9531D6BE1D6003B15D5 /* SQLiteDataStore.swift */; };
 		67CCF9A21D6BF418003B15D5 /* TeamDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CCF9A11D6BF418003B15D5 /* TeamDataHelper.swift */; };
+		A781DC1DD7FD5DF706A792E7 /* Pods_Survival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FEDFC85AFEE988B91EF6CE4 /* Pods_Survival.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,7 @@
 		67CCF9551D6BE20C003B15D5 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../Downloads/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
 		67CCF9A11D6BF418003B15D5 /* TeamDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDataHelper.swift; sourceTree = "<group>"; };
 		763F6EC315896FDF2A2942CF /* Pods-Survival.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survival.release.xcconfig"; path = "Pods/Target Support Files/Pods-Survival/Pods-Survival.release.xcconfig"; sourceTree = "<group>"; };
+		7FEDFC85AFEE988B91EF6CE4 /* Pods_Survival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Survival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50DB3D74FE098A0666EB305 /* Pods-Survival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survival.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Survival/Pods-Survival.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A781DC1DD7FD5DF706A792E7 /* Pods_Survival.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +164,7 @@
 		39C437587A33A724FF57EA1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7FEDFC85AFEE988B91EF6CE4 /* Pods_Survival.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
