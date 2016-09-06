@@ -112,6 +112,7 @@ class ItemDataHelper {
             let query = items.filter(_hero_id != nil)
             for item in try db.prepare(query) {
                 retArray.append(Item(
+                    itemId: item[_item_id],
                     name: item[_name],
                     displayName: item[_display_name],
                     description: item[_description],
@@ -135,6 +136,7 @@ class ItemDataHelper {
             let query = items.filter(_hero_id == nil)
             for item in try db.prepare(query) {
                 retArray.append(Item(
+                    itemId: item[_item_id],
                     name: item[_name],
                     displayName: item[_display_name],
                     description: item[_description],
