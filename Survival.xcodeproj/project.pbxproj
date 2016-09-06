@@ -31,7 +31,16 @@
 		672655071D721F380074C36F /* DataHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672655061D721F380074C36F /* DataHelperProtocol.swift */; };
 		67CCF9541D6BE1D6003B15D5 /* SQLiteDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CCF9531D6BE1D6003B15D5 /* SQLiteDataStore.swift */; };
 		67CCF9A21D6BF418003B15D5 /* TeamDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CCF9A11D6BF418003B15D5 /* TeamDataHelper.swift */; };
-		A781DC1DD7FD5DF706A792E7 /* Pods_Survival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FEDFC85AFEE988B91EF6CE4 /* Pods_Survival.framework */; };
+		67DFDCC31D7E61D500232487 /* EventDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DFDCC21D7E61D500232487 /* EventDataHelper.swift */; };
+		67DFDCCC1D7E640600232487 /* EnemyActionDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DFDCCB1D7E640600232487 /* EnemyActionDataHelper.swift */; };
+		67DFDCCE1D7E64BE00232487 /* EnemyDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DFDCCD1D7E64BE00232487 /* EnemyDataHelper.swift */; };
+		67DFDCD01D7E658A00232487 /* TerrainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DFDCCF1D7E658A00232487 /* TerrainModel.swift */; };
+		67DFDCD21D7E660800232487 /* AttributesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DFDCD11D7E660800232487 /* AttributesModel.swift */; };
+		67DFDCD41D7E668D00232487 /* AttributeDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DFDCD31D7E668D00232487 /* AttributeDataHelper.swift */; };
+		67DFDCD61D7E672400232487 /* TerrainDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DFDCD51D7E672400232487 /* TerrainDataHelper.swift */; };
+		67DFDCD81D7E678300232487 /* OutcomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DFDCD71D7E678300232487 /* OutcomeModel.swift */; };
+		67DFDCDA1D7E685400232487 /* OutcomeDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DFDCD91D7E685400232487 /* OutcomeDataHelper.swift */; };
+		9882913C818D6F2E9FD0C824 /* Pods_Survival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DD0866F4427A3AE2BB6EB5 /* Pods_Survival.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +110,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03DD0866F4427A3AE2BB6EB5 /* Pods_Survival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Survival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67086A821D4D82D700F56A6A /* Survival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Survival.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67086A851D4D82D700F56A6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67086A871D4D82D700F56A6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,8 +140,16 @@
 		67CCF9531D6BE1D6003B15D5 /* SQLiteDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SQLiteDataStore.swift; path = ../SQLiteDataStore.swift; sourceTree = "<group>"; };
 		67CCF9551D6BE20C003B15D5 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../Downloads/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
 		67CCF9A11D6BF418003B15D5 /* TeamDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDataHelper.swift; sourceTree = "<group>"; };
+		67DFDCC21D7E61D500232487 /* EventDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDataHelper.swift; sourceTree = "<group>"; };
+		67DFDCCB1D7E640600232487 /* EnemyActionDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyActionDataHelper.swift; sourceTree = "<group>"; };
+		67DFDCCD1D7E64BE00232487 /* EnemyDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyDataHelper.swift; sourceTree = "<group>"; };
+		67DFDCCF1D7E658A00232487 /* TerrainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerrainModel.swift; sourceTree = "<group>"; };
+		67DFDCD11D7E660800232487 /* AttributesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributesModel.swift; sourceTree = "<group>"; };
+		67DFDCD31D7E668D00232487 /* AttributeDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributeDataHelper.swift; sourceTree = "<group>"; };
+		67DFDCD51D7E672400232487 /* TerrainDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerrainDataHelper.swift; sourceTree = "<group>"; };
+		67DFDCD71D7E678300232487 /* OutcomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutcomeModel.swift; sourceTree = "<group>"; };
+		67DFDCD91D7E685400232487 /* OutcomeDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutcomeDataHelper.swift; sourceTree = "<group>"; };
 		763F6EC315896FDF2A2942CF /* Pods-Survival.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survival.release.xcconfig"; path = "Pods/Target Support Files/Pods-Survival/Pods-Survival.release.xcconfig"; sourceTree = "<group>"; };
-		7FEDFC85AFEE988B91EF6CE4 /* Pods_Survival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Survival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50DB3D74FE098A0666EB305 /* Pods-Survival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survival.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Survival/Pods-Survival.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,7 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A781DC1DD7FD5DF706A792E7 /* Pods_Survival.framework in Frameworks */,
+				9882913C818D6F2E9FD0C824 /* Pods_Survival.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +182,7 @@
 		39C437587A33A724FF57EA1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7FEDFC85AFEE988B91EF6CE4 /* Pods_Survival.framework */,
+				03DD0866F4427A3AE2BB6EB5 /* Pods_Survival.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -247,6 +265,12 @@
 			children = (
 				670CDA4A1D7BB87800DC47D0 /* HeroDataHelper.swift */,
 				670CDA4C1D7BB93200DC47D0 /* ItemDataHelper.swift */,
+				67DFDCC21D7E61D500232487 /* EventDataHelper.swift */,
+				67DFDCCB1D7E640600232487 /* EnemyActionDataHelper.swift */,
+				67DFDCCD1D7E64BE00232487 /* EnemyDataHelper.swift */,
+				67DFDCD31D7E668D00232487 /* AttributeDataHelper.swift */,
+				67DFDCD51D7E672400232487 /* TerrainDataHelper.swift */,
+				67DFDCD91D7E685400232487 /* OutcomeDataHelper.swift */,
 			);
 			name = DatabaseHelpers;
 			sourceTree = "<group>";
@@ -259,6 +283,9 @@
 				670CDA441D7BA56900DC47D0 /* EnemyModel.swift */,
 				670CDA461D7BA5BE00DC47D0 /* HeroModel.swift */,
 				670CDA481D7BA5FC00DC47D0 /* ItemModel.swift */,
+				67DFDCCF1D7E658A00232487 /* TerrainModel.swift */,
+				67DFDCD11D7E660800232487 /* AttributesModel.swift */,
+				67DFDCD71D7E678300232487 /* OutcomeModel.swift */,
 			);
 			name = DatabaseModels;
 			sourceTree = "<group>";
@@ -523,16 +550,25 @@
 				670CDA431D7BA50300DC47D0 /* EnemyActionModel.swift in Sources */,
 				670CDA4B1D7BB87800DC47D0 /* HeroDataHelper.swift in Sources */,
 				670CDA451D7BA56900DC47D0 /* EnemyModel.swift in Sources */,
+				67DFDCD81D7E678300232487 /* OutcomeModel.swift in Sources */,
 				670CDA491D7BA5FC00DC47D0 /* ItemModel.swift in Sources */,
 				672655051D721E940074C36F /* DataModel.swift in Sources */,
 				672654FC1D721DFB0074C36F /* PlayerDataHelper.swift in Sources */,
 				67CCF9A21D6BF418003B15D5 /* TeamDataHelper.swift in Sources */,
+				67DFDCD01D7E658A00232487 /* TerrainModel.swift in Sources */,
 				670CDA471D7BA5BE00DC47D0 /* HeroModel.swift in Sources */,
+				67DFDCD41D7E668D00232487 /* AttributeDataHelper.swift in Sources */,
 				67086A881D4D82D700F56A6A /* ViewController.swift in Sources */,
 				670CDA411D7BA48E00DC47D0 /* EventModel.swift in Sources */,
 				67CCF9541D6BE1D6003B15D5 /* SQLiteDataStore.swift in Sources */,
+				67DFDCD21D7E660800232487 /* AttributesModel.swift in Sources */,
 				67086AB81D4E88FA00F56A6A /* LeaderboardViewController.swift in Sources */,
+				67DFDCDA1D7E685400232487 /* OutcomeDataHelper.swift in Sources */,
+				67DFDCC31D7E61D500232487 /* EventDataHelper.swift in Sources */,
 				670CDA4D1D7BB93200DC47D0 /* ItemDataHelper.swift in Sources */,
+				67DFDCCE1D7E64BE00232487 /* EnemyDataHelper.swift in Sources */,
+				67DFDCCC1D7E640600232487 /* EnemyActionDataHelper.swift in Sources */,
+				67DFDCD61D7E672400232487 /* TerrainDataHelper.swift in Sources */,
 				67086A861D4D82D700F56A6A /* AppDelegate.swift in Sources */,
 				672655071D721F380074C36F /* DataHelperProtocol.swift in Sources */,
 			);

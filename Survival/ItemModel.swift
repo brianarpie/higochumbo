@@ -9,11 +9,12 @@
 import Foundation
 
 typealias Item = (
-    heroId: Int64?,
+    itemId: Int64?,
     name: String?,
     displayName: String?,
     description: String?,
     levelRequired: Int64?,
     price: Int64?,
-    imageUrl: String?
+    imageUrl: String?,
+    heroId: Int64?
 )
