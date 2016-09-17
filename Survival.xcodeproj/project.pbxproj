@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4AA92830618E64748C0F34B0 /* Pods_Survival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 994B6BA99207FF6DD2DBF65B /* Pods_Survival.framework */; };
 		67086A861D4D82D700F56A6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67086A851D4D82D700F56A6A /* AppDelegate.swift */; };
 		67086A881D4D82D700F56A6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67086A871D4D82D700F56A6A /* ViewController.swift */; };
 		67086A8B1D4D82D700F56A6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67086A891D4D82D700F56A6A /* Main.storyboard */; };
@@ -149,7 +148,6 @@
 		67DFDCD71D7E678300232487 /* OutcomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutcomeModel.swift; sourceTree = "<group>"; };
 		67DFDCD91D7E685400232487 /* OutcomeDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutcomeDataHelper.swift; sourceTree = "<group>"; };
 		763F6EC315896FDF2A2942CF /* Pods-Survival.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survival.release.xcconfig"; path = "Pods/Target Support Files/Pods-Survival/Pods-Survival.release.xcconfig"; sourceTree = "<group>"; };
-		994B6BA99207FF6DD2DBF65B /* Pods_Survival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Survival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50DB3D74FE098A0666EB305 /* Pods-Survival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survival.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Survival/Pods-Survival.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,7 +156,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AA92830618E64748C0F34B0 /* Pods_Survival.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +179,6 @@
 		39C437587A33A724FF57EA1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				994B6BA99207FF6DD2DBF65B /* Pods_Survival.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

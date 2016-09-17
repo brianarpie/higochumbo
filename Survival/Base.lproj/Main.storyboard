@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Udl-f3-3J1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Udl-f3-3J1">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Survival-->
@@ -16,11 +17,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iaT-Nf-v1l">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iaT-Nf-v1l">
+                                <frame key="frameInset" minX="20" minY="501" width="360" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="RGc-al-tGi"/>
                                 </constraints>
@@ -38,9 +39,6 @@
                                         <exclude reference="RGc-al-tGi"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="20" y="501" width="360" height="24"/>
-                                </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="RGc-al-tGi"/>
@@ -48,10 +46,11 @@
                                 </variation>
                                 <connections>
                                     <action selector="newGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jta-Nt-1Eo"/>
+                                    <segue destination="VxQ-np-ksg" kind="show" id="R83-kx-JOG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxN-0Q-Emi">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxN-0Q-Emi">
+                                <frame key="frameInset" minX="20" minY="540" width="360" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="qYo-zu-lSE"/>
                                 </constraints>
@@ -62,11 +61,7 @@
                                         <exclude reference="qYo-zu-lSE"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" ambiguous="YES">
-                                    <rect key="frame" x="20" y="540" width="360" height="30"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="737" width="360" height="36"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="qYo-zu-lSE"/>
                                     </mask>
@@ -76,8 +71,8 @@
                                     <segue destination="kE9-rh-O9X" kind="show" id="Gj3-JJ-SRU"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHk-Pz-TCA">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHk-Pz-TCA">
+                                <frame key="frameInset" minX="20" minY="45" width="360" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="s6S-uO-Jkf"/>
                                 </constraints>
@@ -96,29 +91,26 @@
                                         <exclude reference="s6S-uO-Jkf"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="20" y="45" width="360" height="65"/>
-                                </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="s6S-uO-Jkf"/>
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoremet is a game about survival." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsU-ls-5IS">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Zoremet is a game about survival." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsU-ls-5IS">
+                                <frame key="frameInset" minX="-42" minY="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make good decisions or die." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yg0-FW-jKs">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Make good decisions or die." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yg0-FW-jKs">
+                                <frame key="frameInset" minX="-42" minY="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="AsU-ls-5IS" firstAttribute="top" secondItem="MHk-Pz-TCA" secondAttribute="bottom" constant="100" id="1B7-Lc-TaN"/>
                             <constraint firstItem="hxN-0Q-Emi" firstAttribute="top" secondItem="iaT-Nf-v1l" secondAttribute="bottom" constant="30" id="1HK-p9-yXG"/>
@@ -162,18 +154,20 @@
                                 <exclude reference="Yg0-FW-jKs"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Wer-sJ-daA"/>
-                                <exclude reference="lHf-8N-jmr"/>
-                                <exclude reference="qa8-MA-oXc"/>
-                                <exclude reference="tNl-px-vKm"/>
-                                <exclude reference="y2p-jC-5NQ"/>
-                                <exclude reference="zLj-0c-yJI"/>
+                                <exclude reference="Z5K-qR-6yR"/>
+                                <exclude reference="z73-mJ-7Zc"/>
                                 <exclude reference="1B7-Lc-TaN"/>
                                 <exclude reference="AZ1-1v-Z6J"/>
                                 <exclude reference="XO9-TA-wr0"/>
                                 <exclude reference="FSM-GQ-2ao"/>
                                 <exclude reference="jJS-33-iDw"/>
                                 <exclude reference="ked-Qf-Gh8"/>
+                                <exclude reference="Wer-sJ-daA"/>
+                                <exclude reference="lHf-8N-jmr"/>
+                                <exclude reference="qa8-MA-oXc"/>
+                                <exclude reference="tNl-px-vKm"/>
+                                <exclude reference="y2p-jC-5NQ"/>
+                                <exclude reference="zLj-0c-yJI"/>
                                 <exclude reference="1lx-YF-Mm2"/>
                                 <exclude reference="7ZU-wA-Dgh"/>
                                 <exclude reference="92v-3G-ktZ"/>
@@ -188,8 +182,6 @@
                                 <exclude reference="NU9-ZH-KT2"/>
                                 <exclude reference="Qra-gg-piU"/>
                                 <exclude reference="bX2-Nd-M4G"/>
-                                <exclude reference="Z5K-qR-6yR"/>
-                                <exclude reference="z73-mJ-7Zc"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -199,6 +191,7 @@
                                 <include reference="MHk-Pz-TCA"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="z73-mJ-7Zc"/>
                                 <include reference="lHf-8N-jmr"/>
                                 <include reference="qa8-MA-oXc"/>
                                 <include reference="y2p-jC-5NQ"/>
@@ -208,7 +201,6 @@
                                 <include reference="FPp-4p-LK0"/>
                                 <include reference="Hyh-2i-g3S"/>
                                 <include reference="NU9-ZH-KT2"/>
-                                <include reference="z73-mJ-7Zc"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -217,18 +209,20 @@
                                 <include reference="Yg0-FW-jKs"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Wer-sJ-daA"/>
-                                <exclude reference="lHf-8N-jmr"/>
-                                <exclude reference="qa8-MA-oXc"/>
-                                <include reference="tNl-px-vKm"/>
-                                <exclude reference="y2p-jC-5NQ"/>
-                                <include reference="zLj-0c-yJI"/>
+                                <include reference="Z5K-qR-6yR"/>
+                                <exclude reference="z73-mJ-7Zc"/>
                                 <include reference="1B7-Lc-TaN"/>
                                 <include reference="AZ1-1v-Z6J"/>
                                 <include reference="XO9-TA-wr0"/>
                                 <include reference="FSM-GQ-2ao"/>
                                 <include reference="jJS-33-iDw"/>
                                 <include reference="ked-Qf-Gh8"/>
+                                <include reference="Wer-sJ-daA"/>
+                                <exclude reference="lHf-8N-jmr"/>
+                                <exclude reference="qa8-MA-oXc"/>
+                                <include reference="tNl-px-vKm"/>
+                                <exclude reference="y2p-jC-5NQ"/>
+                                <include reference="zLj-0c-yJI"/>
                                 <include reference="1lx-YF-Mm2"/>
                                 <include reference="7ZU-wA-Dgh"/>
                                 <include reference="92v-3G-ktZ"/>
@@ -243,8 +237,6 @@
                                 <exclude reference="NU9-ZH-KT2"/>
                                 <include reference="Qra-gg-piU"/>
                                 <include reference="bX2-Nd-M4G"/>
-                                <include reference="Z5K-qR-6yR"/>
-                                <exclude reference="z73-mJ-7Zc"/>
                             </mask>
                         </variation>
                     </view>
@@ -253,6 +245,108 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="273" y="-234"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ONm-8u-mdS">
+            <objects>
+                <viewController id="VxQ-np-ksg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7a8-iZ-N9T"/>
+                        <viewControllerLayoutGuide type="bottom" id="EnY-wq-IeQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jhv-Bv-uWH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is your village." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1R-fx-ZIi">
+                                <frame key="frameInset" minX="20" minY="273" width="146" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Talk to the merchant, buy things." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqw-Do-3gT">
+                                <frame key="frameInset" minX="20" minY="302" width="251" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Talk to the sage, he knows stuff." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEv-Ya-cjX">
+                                <frame key="frameInset" minX="18" minY="331" width="246" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2t-n2-jLa">
+                                <frame key="frameInset" minX="18" minY="404" width="226" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="I'm ready for the journey ahead..."/>
+                                <connections>
+                                    <segue destination="DKP-4t-aFd" kind="show" id="OFT-cu-FDA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="d1R-fx-ZIi"/>
+                                <exclude reference="Xqw-Do-3gT"/>
+                                <exclude reference="dEv-Ya-cjX"/>
+                                <exclude reference="w2t-n2-jLa"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="d1R-fx-ZIi"/>
+                                <include reference="Xqw-Do-3gT"/>
+                                <include reference="dEv-Ya-cjX"/>
+                                <include reference="w2t-n2-jLa"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nLB-tH-dNp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051.5" y="-481.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Bhw-Nv-kM4">
+            <objects>
+                <viewController id="DKP-4t-aFd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v3f-45-XLE"/>
+                        <viewControllerLayoutGuide type="bottom" id="XmP-ZP-dgL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hd4-RH-LDK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qnu-6H-rHV">
+                                <frame key="frameInset" minX="221" minY="178"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Qnu-6H-rHV"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Qnu-6H-rHV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X2r-Ne-JmT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1845" y="-481.5"/>
         </scene>
         <!--Leaderboard-->
         <scene sceneID="2Uk-mm-dTu">
@@ -263,9 +357,9 @@
                         <viewControllerLayoutGuide type="bottom" id="3PL-Xp-ZCg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="w7t-R1-Wu6">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Leaderboard" id="NbQ-1Y-uXq">
                         <barButtonItem key="backBarButtonItem" title="New Game" id="aUn-lI-umk"/>
@@ -273,7 +367,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="th1-Ft-PA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1051.5" y="-234"/>
+            <point key="canvasLocation" x="1051.5" y="193.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LoB-Nc-KBD">
